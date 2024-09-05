@@ -6,7 +6,7 @@
 }
 
 html, body {
-    background: linear-gradient(135deg, #101820, #4e085f);
+    background: linear-gradient(135deg, #153677, #4e085f);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -19,8 +19,8 @@ html, body {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding: 3em;
-    max-width: 700px;
+    padding: 3em 1.4em 3em 2em;
+    max-width: 550px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease-in-out;
 }
@@ -28,7 +28,7 @@ html, body {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(-20px);
     }
     100% {
         opacity: 1;
@@ -44,48 +44,32 @@ html, body {
 }
 
 .opening-page-container img:hover {
-    transform: rotate(10deg) scale(1.05);
+    transform: scale(1.05);
 }
 
-.opening-page-right-content {
-    padding-left: 2em;
-}
-
-.opening-page-right-content h1 {
-    font-size: 2.2em;
-    padding-top: .4em;
-    line-height: 1.35em;
-    margin-bottom: 0.4em;
+.opening-page-container h1 {
+    font-size: .9em;
+    font-weight: normal;
+    margin-left: 1.2em;
+    margin-right: 2.1em;
     color: #ffffff;
 }
 
-.opening-page-right-content button {
+button {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     background-color: #ff5722;
     border: none;
     border-radius: 5px;
-    padding: .6em 1.2em;
-    margin: 0 .5em .5em;
-    font-size: .9em;
+    padding: .5em 1.4em;
+    margin-left: 0;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
-.opening-page-right-content button:hover {
+button:hover {
     transform: scale(1.05);
     background-color: #ea5528;
-}
-
-.opening-page-right-content button:active {
-    transform: scale(0.98);
-    background-color: #d84315; /* Darker shade of orange */
-}
-
-.opening-page-right-content button#no {
-    background-color: #f5f5f5; /* A light neutral gray */
-    color: black; /* Black text to contrast */
-    border: 2px solid #ccc; /* Add a subtle border */
 }
